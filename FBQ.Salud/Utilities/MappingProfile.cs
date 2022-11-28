@@ -10,6 +10,7 @@ namespace FBQ.Salud_Presentation.Utilities
         {
             CreateMap<Documentos, DocumentosDto>().ReverseMap();
             CreateMap<Insumos, InsumosDto>().ReverseMap();
+            CreateMap<Insumos, InsumosGetDto>().ReverseMap();
         }
        
     }

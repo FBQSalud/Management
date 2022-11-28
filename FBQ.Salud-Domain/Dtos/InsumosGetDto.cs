@@ -2,13 +2,14 @@
 
 namespace FBQ.Salud_Domain.Dtos
 {
-    public class InsumosDto
+    public class InsumosGetDto
     {
-        [Required]
+        public int InsumosId { get; set; }
+
         public string Nombre { get; set; }
-        [Required]
+
         public string Especialidad { get; set; }
-        [Required]
+
         public int Stock { get; set; }
     }
 }

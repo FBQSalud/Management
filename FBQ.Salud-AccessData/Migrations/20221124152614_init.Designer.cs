@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FBQ.Salud_AccessData.Migrations
 {
     [DbContext(typeof(FBQSaludDbContext))]
-    [Migration("20220925132318_init")]
+    [Migration("20221124152614_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

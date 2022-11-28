@@ -25,6 +25,15 @@ builder.Services.AddTransient<IInsumosService, InsumosServices>();
 builder.Services.AddTransient<IDocumentosRepository, DocumentosRepository>();
 builder.Services.AddTransient<IDocumentosSevice, DocumentosServices>();
 
+//Cors
+builder.Services.AddCors(c =>
+{
+    c.AddPolicy("AllowOrigin", options => options
+                                                .AllowAnyOrigin()
+                                                .AllowAnyMethod()
+                                                .AllowAnyHeader());
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,6 +42,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(options =>
+{
+    options.AllowAnyMethod();
+    options.AllowAnyHeader();
+    options.AllowAnyOrigin();
+});
 
 app.UseHttpsRedirection();
 

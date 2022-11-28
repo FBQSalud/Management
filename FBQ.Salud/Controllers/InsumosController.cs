@@ -25,7 +25,7 @@ namespace FBQ.Salud_Presentation.Controllers
             try
             {
                 var insumo = _service.GetAll();
-                var insumoMapped = _mapper.Map<List<InsumosDto>>(insumo);
+                var insumoMapped = _mapper.Map<List<InsumosGetDto>>(insumo);
 
                 return Ok(insumoMapped);
             }
@@ -41,7 +41,7 @@ namespace FBQ.Salud_Presentation.Controllers
             try
             {
                 var insumo = _service.GetInsumoById(id);
-                var insumoMapped = _mapper.Map<InsumosDto>(insumo);
+                var insumoMapped = _mapper.Map<InsumosGetDto>(insumo);
                 if (insumo == null)
                 {
                     return NotFound("Insumo Inexistente");
@@ -55,7 +55,7 @@ namespace FBQ.Salud_Presentation.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateInsumo([FromForm] InsumosDto insumo)
+        public IActionResult CreateInsumo([FromBody] InsumosDto insumo)
         {
             try
             {

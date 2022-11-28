@@ -11,7 +11,7 @@ namespace FBQ.Salud_AccessData.Commands
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=FRANCOLOPEZ\\SQLEXPRESS;Database=DbGestion;Trusted_Connection=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=DbManagement;Trusted_Connection=True;MultipleActiveResultSets=true");
         }
 
         public virtual DbSet<Documentos> Documentos { get; set; }
