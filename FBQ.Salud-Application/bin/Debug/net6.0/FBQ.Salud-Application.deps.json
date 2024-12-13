@@ -518,7 +518,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
         "runtime": {
-          "FBQ.Salud-AccessData.dll": {}
+          "FBQ.Salud-AccessData.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "FBQ.Salud-Domain/1.0.0": {
@@ -528,7 +531,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
         "runtime": {
-          "FBQ.Salud-Domain.dll": {}
+          "FBQ.Salud-Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
