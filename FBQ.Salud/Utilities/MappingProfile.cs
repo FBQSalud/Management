@@ -8,10 +8,10 @@ namespace FBQ.Salud_Presentation.Utilities
     {
         public MappingProfile()
         {
-            CreateMap<Documentos, DocumentosDto>().ReverseMap();
-            CreateMap<Insumos, InsumosDto>().ReverseMap();
-            CreateMap<Insumos, InsumosGetDto>().ReverseMap();
+            CreateMap<Documentos, DocumentosDto>().ReverseMap().ReverseMap();
+            CreateMap<Insumos, InsumosDto>().ReverseMap().ReverseMap();
+            CreateMap<Insumos, InsumosGetDto>().ReverseMap().ReverseMap();
+            CreateMap<Comunicaciones, ComunicacionesDto>().ReverseMap();
         }
-       
     }
 }

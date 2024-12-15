@@ -16,5 +16,6 @@ namespace FBQ.Salud_AccessData.Commands
 
         public virtual DbSet<Documentos> Documentos { get; set; }
         public virtual DbSet<Insumos> Insumos { get; set; }
+        public virtual DbSet<Comunicaciones> Comunicaciones { get; set; }
     }
 }

@@ -24,6 +24,8 @@ builder.Services.AddTransient<IInsumosRepository, IsumosRepository>();
 builder.Services.AddTransient<IInsumosService, InsumosServices>();
 builder.Services.AddTransient<IDocumentosRepository, DocumentosRepository>();
 builder.Services.AddTransient<IDocumentosSevice, DocumentosServices>();
+builder.Services.AddTransient<IComunicacionesRepository, ComunicacionesRepository>();
+builder.Services.AddTransient<IComunicacionesServices, ComunicacionesServices>();
 
 //Cors
 builder.Services.AddCors(c =>

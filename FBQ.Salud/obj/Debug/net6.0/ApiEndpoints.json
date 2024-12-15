@@ -1,5 +1,84 @@
 [
   {
+    "ContainingType": "FBQ.Salud_Presentation.Controllers.ComunicacionesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Comunicaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_Presentation.Controllers.ComunicacionesController",
+    "Method": "Createcomunicacion",
+    "RelativePath": "api/Comunicaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comunicacion",
+        "Type": "FBQ.Salud_Domain.Dtos.ComunicacionesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_Presentation.Controllers.ComunicacionesController",
+    "Method": "GetComunicacion",
+    "RelativePath": "api/Comunicaciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_Presentation.Controllers.ComunicacionesController",
+    "Method": "UpdateComunicacion",
+    "RelativePath": "api/Comunicaciones/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "comunicacion",
+        "Type": "FBQ.Salud_Domain.Dtos.ComunicacionesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_Presentation.Controllers.ComunicacionesController",
+    "Method": "DeleteComunicacion",
+    "RelativePath": "api/Comunicaciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FBQ.SaludPresentation.Controllers.DocumentosController",
     "Method": "GetAll",
     "RelativePath": "api/Documentos",

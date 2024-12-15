@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FBQ.Salud-Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eff406be4e5766b51c6a6e1f2550ef9297fb99fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+812642ab32520c75b6a47c1add29fc76c32d3b3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FBQ.Salud-Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FBQ.Salud-Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
